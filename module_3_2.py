@@ -4,7 +4,6 @@ def send_email(message, recipient, *, sender = 'university.help@gmail.com'):
     else:
         def check_address(address_to_check):    # функция проверки корректности адреса
             last_in_string = False
-         #   address_good = False
             at_sign_count = address_to_check.count("@")  # проверка наличия в адреса одного символа '@'
             for i in range(len(countries)):   # перебор элементов списка кодов стран
                 country_sign_position = address_to_check.find(countries[i])
